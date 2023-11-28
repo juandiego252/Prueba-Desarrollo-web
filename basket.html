@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basket</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/stylenba.css" />
+  </head>
+
+  <body>
+    <!-- ========== Inicio de la Sección del Navbar ========== -->
+    <header class="section-navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img
+              src="./images/logo11.png"
+              alt="my logo"
+              width="60%"
+              height="auto"
+            />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Deportes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ========== Inicio de la Sección de las tablas========== -->
+    <!--Mejores Jugadores NBA-->
+    <section class="section-top-players">
+      <div class="container top-players-container">
+        <h2>Top 10 Mejores Jugadores de la NBA</h2>
+        <table class="top-players-table">
+          <thead>
+            <tr>
+              <th class="player-id">ID</th>
+              <th class="player-name">Nombre</th>
+              <th class="player-last-name">Apellido</th>
+              <th class="player-height">Altura</th>
+              <th class="player-position">Posición</th>
+              <th class="player-team">Equipo</th>
+              <th class="player-weight">Peso</th>
+            </tr>
+          </thead>
+          <tbody id="topPlayersTableBody" class="top-players-table-body">
+            <!-- Aquí se llenará la tabla con datos dinámicamente desde JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!--Top 5 mejores equipos de la NBA-->
+
+    <section class="section-top-teams">
+      <div class="container top-teams-container">
+        <h2 class="Title-team">Top 10 Mejores Equipos de la NBA</h2>
+        <table class="top-teams-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Abreviación</th>
+              <th>Ciudad</th>
+              <th>Conferencia</th>
+              <th>División</th>
+              <th>Nombre Completo</th>
+              <th>Nombre</th>
+            </tr>
+          </thead>
+          <tbody id="topTeamsTableBody" class="top-teams-table-body">
+            <!-- Aquí se llenará la tabla con datos dinámicamente desde JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ========== Fin de la Sección del Blog ========== -->
+
+    <!-- ========== Inicio de la Sección de Contacto ========== -->
+    <div class="section-contact--homepage" id="section-contact--homepage">
+      <div class="container grid grid-two--cols">
+        <div class="contact-content" data-aos="fade-up" data-aos-delay="100">
+          <h2 class="contact-title">
+            Mantente Actualizado con Noticias de basketball
+          </h2>
+          <p>
+            Suscríbete a nuestro boletín para las últimas actualizaciones e
+            información sobre basketball.
+          </p>
+          <div class="btn" data-aos="fade-up" data-aos-delay="100">
+            <a href="contact.html">
+              Contactanos <i class="fa-solid fa-arrow-circle-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="contact-image" data-aos="fade-up" data-aos-delay="100">
+          <img src="images/click.png" alt="Mano haciendo click" />
+        </div>
+      </div>
+    </div>
+    <!-- ========== Fin de la Sección de Contacto ========== -->
+
+    <!-- ========== Inicio de la Sección del Pie de Página ========== -->
+    <footer>
+      <div class="container grid grid-four--cols"></div>
+    </footer>
+
+    <!-- ========== Fin de la Sección del Pie de Página ========== -->
+    <script src="./APIs/script_nba.js"></script>
+  </body>
+</html>
